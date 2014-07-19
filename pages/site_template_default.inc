@@ -1,0 +1,60 @@
+<?php
+$handler = new stdClass();
+$handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+$handler->api_version = 1;
+$handler->name = 'site_template_panel_context';
+$handler->task = 'site_template';
+$handler->subtask = '';
+$handler->handler = 'panel_context';
+$handler->weight = 0;
+$handler->conf = array(
+  'title' => 'Default',
+  'no_blocks' => 1,
+  'pipeline' => 'standard',
+  'body_classes_to_remove' => '',
+  'body_classes_to_add' => '',
+  'css_id' => '',
+  'css' => '',
+  'contexts' => array(),
+  'relationships' => array(),
+);
+$display = new panels_display();
+$display->layout = 'threecol_25_50_25_stacked';
+$display->layout_settings = array();
+$display->panel_settings = array(
+  'style_settings' => array(
+    'default' => NULL,
+    'top' => NULL,
+    'left' => NULL,
+    'middle' => NULL,
+    'right' => NULL,
+    'bottom' => NULL,
+  ),
+);
+$display->cache = array();
+$display->title = '';
+$display->uuid = '302cd1b9-28b2-4d09-955c-4232b107b550';
+$display->content = array();
+$display->panels = array();
+  $pane = new stdClass();
+  $pane->pid = 'new-ae538fc7-1441-4f96-9d8a-fbe2c37e5347';
+  $pane->panel = 'top';
+  $pane->type = 'page_site_name';
+  $pane->subtype = 'page_site_name';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = 'ae538fc7-1441-4f96-9d8a-fbe2c37e5347';
+  $display->content['new-ae538fc7-1441-4f96-9d8a-fbe2c37e5347'] = $pane;
+  $display->panels['top'][0] = 'new-ae538fc7-1441-4f96-9d8a-fbe2c37e5347';
+$display->hide_title = PANELS_TITLE_FIXED;
+$display->title_pane = 'new-ae538fc7-1441-4f96-9d8a-fbe2c37e5347';
+$handler->conf['display'] = $display;

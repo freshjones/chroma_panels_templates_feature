@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Chroma Template Defaults feature.
+ */
+
+include_once 'chroma_template_defaults.features.inc';

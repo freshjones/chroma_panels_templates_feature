@@ -1,0 +1,15 @@
+name = Chroma Template Defaults
+description = Default Page Layout Templates
+core = 7.x
+package = Panels
+version = 7.x-1.0
+project = chroma_template_defaults
+dependencies[] = ctools
+dependencies[] = panels
+dependencies[] = panels_everywhere
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[variable][] = page_manager_node_view_disabled
+features[variable][] = page_manager_term_view_disabled
+features[variable][] = panels_everywhere_site_template_enabled
